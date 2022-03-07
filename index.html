@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/pluginJQ.js"></script>
+    <title>Puissance 4</title>
+</head>
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="Style/fond.mp4" type="video/mp4"> 
+        </video>
+    <form id="form" method="POST"> 
+        <div id="box-color-player1">
+        <input id="player1" type="text" placeholder="Player 1">
+        <select id="color1" name="couleur">
+            <option value="white">Blanc</option>
+            <option value="blue">Bleu</option>
+            <option value="green">Vert</option>
+            <option value="black">Noir</option>
+            <option value="red">Rouge</option>
+            <option value="yellow">Jaune</option>
+            <option value="orange">Orange</option>
+        </select><br>
+    </div>
+    <div id="box-color-player2">
+        <input id="player2" type="text" placeholder="Player 2">
+        <select id="color2" name="couleur">
+            <option value="white">Blanc</option>
+            <option value="blue">Bleu</option>
+            <option value="green">Vert</option>
+            <option value="black">Noir</option>
+            <option value="red">Rouge</option>
+            <option value="yellow">Jaune</option>
+            <option value="orange">Orange</option>
+        </select><br>
+    </div>
+    <div id="game">
+        <button  id="start-game">Jouer</button>
+    </div>
+</form>
+<div id="play">
+</div>
+<div id="scores">
+    <div class="scores">
+        <div>
+            <span id="result-P1"></span>
+            <span id="Player-1">0</span>
+        </div>
+        <div>
+            <span id="result-P2"></span>
+            <span id="Player-2">0</span>
+        </div>
+    </div>
+</div>
+<div id="hide" class="hide">
+    <button id='restart-game'>Rejouer</button>
+    <button id="new-game">Nouvelle partie</button>
+</div>
+<div id="body">
+</div>
+</body>
+</html>

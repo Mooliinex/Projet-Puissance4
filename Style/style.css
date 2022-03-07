@@ -1,0 +1,244 @@
+body {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#box-color-player1 {
+  border-width: medium;
+  margin-bottom: 2%;
+  color: rgb(233, 143, 143);
+  font-weight: bold;
+}
+#box-color-player2 {
+  margin-bottom: 2%;
+  color: rgb(233, 143, 143);
+  font-weight: bold;
+}
+
+#player1 {
+  font-weight: bold;
+
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  border-width: 7px;
+  border-radius: 35px;
+  border-style: double;
+  background-color: #ec9ea2;
+  border-color: rgb(49, 48, 48);
+}
+
+#player2 {
+  font-weight: bold;
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  border-width: 7px;
+  border-radius: 35px;
+  border-style: double;
+  background-color: #ec9ea2;
+  border-color: rgb(49, 48, 48);
+}
+
+#color1 {
+  font-weight: bold;
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  border-width: 7px;
+  border-radius: 35px;
+  border-style: double;
+  background-color: #ec9ea2;
+  border-color: rgb(49, 48, 48);
+}
+
+#color2 {
+  font-weight: bold;
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  border-width: 7px;
+  border-radius: 35px;
+  border-style: double;
+  background-color: #ec9ea2;
+  border-color: rgb(49, 48, 48);
+}
+
+#play {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+.gridColor {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin: 5px;
+}
+
+.gridColor.empty {
+  cursor: pointer;
+}
+.gridColor.player-white {
+  background-color: white;
+}
+.gridColor.white {
+  background-color: white;
+}
+.gridColor.player-yellow {
+    background-color: yellow;
+}
+.gridColor.yellow {
+    background-color: yellow;
+}
+.gridColor.player-green {
+  background-color: green;
+}
+.gridColor.green {
+  background-color: green;
+}
+.gridColor.player-blue {
+    background-color: blue;
+}
+.gridColor.blue {
+    background-color: blue;
+}
+.gridColor.player-red {
+  background-color: red;
+}
+.gridColor.red {
+  background-color: red;
+}
+.gridColor.player-black {
+  background-color: black;
+}
+.gridColor.black {
+  background-color: black;
+}
+.gridColor.player-orange {
+  background-color: orange;
+}
+.gridColor.orange {
+  background-color: orange;
+}
+#game > button#start-game {
+  display: inline-flex;
+  position: center;
+  margin-top: 1em;
+  padding: 0.75em 1em;
+  outline: none;
+  border: none;
+  border-radius: 3em;
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: #ec9ea2;
+  cursor: pointer;
+}
+
+#game > button#start-game:hover,
+#game > button#start-game:focus {
+  background-color: rgb(236, 193, 193);
+}
+
+button#start-game:active {
+  background-color: #f1cbcb;
+}
+
+#hide > button#restart-game {
+  display: inline-flex;
+  position: center;
+  margin-top: 1em;
+  padding: 0.75em 1em;
+  outline: none;
+  border: none;
+  border-radius: 3em;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  background-color: #ec9ea2;
+  cursor: pointer;
+}
+
+#hide > button#restart-game:hover,
+#hide > button#restart-game:focus {
+  background-color: rgb(236, 193, 193);
+}
+
+button#restart-game:active {
+  background-color: #f1cbcb;
+}
+
+#hide > button#new-game {
+  display: inline-flex;
+  position: center;
+  margin-top: 1em;
+  padding: 0.75em 1em;
+  outline: none;
+  border: none;
+  border-radius: 3em;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  background-color: #ec9ea2;
+  cursor: pointer;
+}
+
+#hide > button#new-game:hover,
+#hide > button#new-game:focus {
+  background-color: #ec9ea2;
+}
+
+button#new-game:active {
+  background-color: rgb(236, 193, 193);
+}
+
+#scores > .scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#scores > .scores > div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.75em;
+    margin: 0.5em;
+    color: black;
+    font-size: 1em;
+  font-weight: bold;
+}
+
+#scores > .scores > div > span:first-child {
+    margin-bottom: 0.5em;
+}
+
+#scores > .scores > div > span:last-child {
+    font-size: 1.5em;
+}
+
+#form {
+  margin-top: 20%;
+}
